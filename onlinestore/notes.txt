@@ -1,0 +1,18 @@
+lets create a vertual enviormnt
+
+1. we need to install the the library of virtualenv
+python3 -m pip install virtualenv
+
+2. lets use this library 
+{cd (name of folder)} change directory of the folder you want to use  
+
+python3 -m venv venv
+
+
+
+3. lunch the virtal enviormnt
+source venv/bin/activate
+
+
+
+4. python3 -m pip install flask
