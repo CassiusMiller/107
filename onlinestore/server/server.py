@@ -46,7 +46,7 @@ def put_products(index):
 # just remember that to delete an element from a list, you need to use - pop
 @app.delete("/api/products/<int:index>")
 def delete_products(index):
-  deletedProduct = request.get_json()
+  # deletedProduct = request.get_json()
   if 0<= index < len(products):
   #    ---> Here we need to specify wich element from products list will be removed
     deletedProduct = products.pop(index)
