@@ -1,0 +1,26 @@
+/* all css will nee the corisponding file to prevent leakage to othe .jsx files */
+
+.navbar {
+  display: flex;
+}
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li{
+  width: 60px;
+  margin: 10px;
+}
+
+.navbar ul li:hover{
+  color: crimson;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navbar .title{
+  font-size: 20px;
+  font-weight: bold;
+}
