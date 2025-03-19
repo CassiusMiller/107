@@ -66,10 +66,8 @@ function Catologe(){
       <h1>This a Dope store</h1>
 
       <div className="list">
-        <Product/>
-        <Product/>
-        <Product/>
-        <Product/>
+        <Product data = {mockData[1]} />
+        <Product title="test 1"/>      
       </div>
     </div>
   )
