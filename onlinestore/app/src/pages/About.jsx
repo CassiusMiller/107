@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "About.css"
 
 function About(){
@@ -15,7 +16,7 @@ function About(){
 
       <button className="btn btn-dark" onClick={showData}>See Email</button>
     </div>
-  );
+  )
 }
 
 export default About;

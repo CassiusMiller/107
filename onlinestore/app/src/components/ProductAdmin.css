@@ -1,0 +1,15 @@
+.padmin{
+  border: 1px solid #6a6a6a;
+  border-radius: 4px;
+  padding: 10px;
+  max-width: 500px;
+}
+
+.padmin .form-fied{
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.padmin .form-fied label{
+  display: block;
+}

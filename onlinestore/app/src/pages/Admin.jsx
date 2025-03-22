@@ -1,3 +1,5 @@
+import Discount from "../components/Discount";
+import ProductAdmin from "../components/ProductAdmin";
 import "./Admin.css"
 
 function Admin(){
@@ -7,10 +9,10 @@ function Admin(){
 
       <div className="parent">
         <section>
-          <h3>Sec 1</h3>
+          <ProductAdmin/>
         </section>
         <section>
-          <h3>Sec 2 </h3>
+          <Discount/>
         </section>
       </div>
     </div>
