@@ -2,11 +2,14 @@
 
 .navbar {
   display: flex;
+  align-items: center;
 }
 
 .navbar ul{
   display: flex;
   list-style: none;
+  margin-bottom: 0;
+  flex: 1;
 }
 
 .navbar ul li{

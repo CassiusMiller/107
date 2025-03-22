@@ -1,73 +1,78 @@
-import Product from "../components/Product"
+import Product from '../components/Product'
 import "./Catologe.css"
 
 const mockData = [
   {
     "title": "pecan",
-    "price": 23.98,
+    "price": 24.99,
     "category": "pie",
     "image": "/images/ppecan.JPG",
     "_id": "1234" 
   },
   {
     "title": "lemon",
-    "price": 33.99,
+    "price": 34.99,
     "category": "pie",
     "image": "/images/plemon.JPG",
     "_id": "3244" 
   },
   {
     "title": "lemon",
-    "price": 10.92,
+    "price": 14.99,
     "category": "Cake",
     "image": "/images/clemon.JPG",
     "_id": "1254" 
   },
   {
     "title": "pumpkin",
-    "price": 123.92,
+    "price": 9.99,
     "category": "pie",
     "image": "/images/ppumkin.JPG",
     "_id": "3432" 
   },
   {
     "title": "apple",
-    "price": 123.92,
+    "price": 44.99,
     "category": "pie",
     "image": "/images/papple.JPG",
     "_id": "7394" 
   },
   {
     "title": "mix Berry",
-    "price": 37.92,
+    "price": 34.99,
     "category": "pie",
     "image": "/images/pmixberry.JPG",
     "_id": "6745" 
   },
   {
     "title": "chocolate",
-    "price": 40.99,
+    "price": 39.99,
     "category": "Cake",
     "image": "/images/cchocolate.JPG",
     "_id": "5674" 
   },
   {
     "title": "vanilla",
-    "price": 30.99,
+    "price": 29.99,
     "category": "Cake",
     "image": "/images/cvanilla.JPG",
     "_id": "0981" 
   },   
 ]
 
+const mockCategories = ["Cake", "Pie", "Cookies"]
+
 function Catologe(){
   return(
     <div className="catologe">
-      <h1>This a Dope store</h1>
+      <h1>Check out these sweats</h1>
+
+      <div className="filters">
+      {mockCategories.map( cat => <button className='btn btn-sm btn-outline-success'>{cat}</button>)}
+      </div>
 
       <div className="list">
-        <Product data = {mockData[1]} />
-        <Product title="test 1"/>      
+        {mockData.map( prod => <Product key={item._id} data={item}></Product>)}
       </div>
     </div>
   )

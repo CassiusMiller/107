@@ -1,0 +1,15 @@
+.catologe{
+
+}
+
+.catologe h1{
+  text-align: center;
+  color: darkcyan;
+}
+.catologe .filters {
+  margin-bottom: 12px;
+}
+
+.catologe .filters button{
+  margin-left: 5px;
+}

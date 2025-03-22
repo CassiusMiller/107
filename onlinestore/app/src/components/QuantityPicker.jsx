@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 import "./QuantityPicker.css"
 
 function QuantityPicker() {
@@ -7,17 +7,18 @@ function QuantityPicker() {
   function increase() {
     let val = quantity + 1;
     setQuantity(val);
+    props.onChange(val);
   }
   function decrease() {
+    if (quantity == 1) return;
+
     let val = quantity - 1;
-    if (val>= 1) {
-      setQuantity(val);
-    }
-    
+    setQuantity(val);
+    props.onChange(val);
   }
 
   return(
-    <div className="quantitypicker">
+    <div className="qtpicker">
       <button className="btn btn-outline-secondary" disabled={quantity == 1} onClick={decrease}>-</button>
       <label>{quantity}</label>
       <button className="btn btn-outline-secondary" onClick={increase}>+</button>
