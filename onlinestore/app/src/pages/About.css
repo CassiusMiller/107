@@ -7,3 +7,13 @@
   text-align: center;
   color: darkcyan;
 }
+
+.about .me{
+  height: 250px;
+  border-radius: 40%;
+  margin-bottom: 12px;
+}
+
+.about button{
+  margin-top: 12px;
+}

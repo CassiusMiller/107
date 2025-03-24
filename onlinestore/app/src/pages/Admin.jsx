@@ -4,7 +4,7 @@ import "./Admin.css"
 
 function Admin(){
   return(
-    <div className="admin">
+    <div className="admin page">
       <h1>Store admin</h1>
 
       <div className="parent">

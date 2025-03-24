@@ -41,14 +41,14 @@ const mockData = [
     "title": "mix Berry",
     "price": 34.99,
     "category": "pie",
-    "image": "/images/pmixberry.JPG",
+    "image": "/images/pmixberry.WEBP",
     "_id": "6745" 
   },
   {
     "title": "chocolate",
     "price": 39.99,
     "category": "Cake",
-    "image": "/images/cchocolate.JPG",
+    "image": "/images/cchocolate.WEBP",
     "_id": "5674" 
   },
   {
@@ -64,7 +64,7 @@ const mockCategories = ["Cake", "Pie", "Cookies"]
 
 function Catologe(){
   return(
-    <div className="catologe">
+    <div className="catologe page">
       <h1>Check out these sweats</h1>
 
       <div className="filters">

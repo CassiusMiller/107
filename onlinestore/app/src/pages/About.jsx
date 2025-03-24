@@ -10,7 +10,10 @@ function About(){
   
 
   return (
-    <div className="about">
+    <div className="about page">
+
+      <img className="me" src="/1img.heic" alt="about me" />
+
       <h2>Cassius Miller</h2>
       { isVisible ? <h5>cassius.miller@sdgku.edu</h5> : <label className="d-block">Click to see email</label> }
 

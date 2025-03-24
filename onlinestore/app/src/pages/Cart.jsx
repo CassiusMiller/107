@@ -2,7 +2,10 @@ import "./Cart.css"
 
 function Cart(){
   return(
- <h1>ready to check out</h1>
+  <div className="cart page">
+    <h1>Ready to check out</h1>
+  </div>
+  
   )
 }
 
