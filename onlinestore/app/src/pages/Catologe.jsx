@@ -27,7 +27,7 @@ const mockData = [
     "title": "pumpkin",
     "price": 9.99,
     "category": "pie",
-    "image": "/images/ppumkin.JPG",
+    "image": "/images/ppumkin.jpg",
     "_id": "3432" 
   },
   {
@@ -72,7 +72,7 @@ function Catologe(){
       </div>
 
       <div className="list">
-        {mockData.map( prod => <Product key={item._id} data={item}></Product>)}
+        {mockData.map( prod => <Product key={prod._id} data={prod}></Product>)}
       </div>
     </div>
   )
