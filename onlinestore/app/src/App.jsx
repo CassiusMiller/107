@@ -13,6 +13,7 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import GlobalPorvider from './state/GlobalProvider';
 
 
 
@@ -21,21 +22,23 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <GlobalPorvider>
+      <BrowserRouter>
 
-      <Navbar/>
+        <Navbar/>
 
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/home' element={<Home/>}/>
-        <Route path='/catologe' element={<Catologe/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/admin' element={<Admin/>}/>
-        <Route path='/cart' element={<Cart/>}/>
-      </Routes>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/home' element={<Home/>}/>
+          <Route path='/catologe' element={<Catologe/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/admin' element={<Admin/>}/>
+          <Route path='/cart' element={<Cart/>}/>
+        </Routes>
 
-      <Footer/>
-    </BrowserRouter>
+        <Footer/>
+      </BrowserRouter>
+    </GlobalPorvider>
   )
 }
 

@@ -5,3 +5,17 @@
 .cart h1{
   text-align: center;
 }
+.cart .prod-in-cart{
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+
+.cart .prod-in-cart img{
+  height: 80px;
+}
+.cart .prod-in-cart .frac1{
+  flex: 1;
+}

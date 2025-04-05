@@ -1,4 +1,14 @@
 .home {
+  font-family: cursive;
+  font-style: italic;
+  background-image: url("/images/home-back.webp"); 
+}
+.home .header{
+  padding: 100px;
   color: whitesmoke;
-  background-image: url("/images/home-back.webp");
+}
+.home .intro{
+  padding: 20%;
+  text-size-adjust: 30%;
+  color: whitesmoke;
 }

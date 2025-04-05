@@ -3,56 +3,56 @@ import "./Catologe.css"
 
 const mockData = [
   {
-    "title": "pecan",
+    "title": "Pecan",
     "price": 24.99,
     "category": "pie",
     "image": "/images/ppecan.JPG",
     "_id": "1234" 
   },
   {
-    "title": "lemon",
+    "title": "Lemon",
     "price": 34.99,
     "category": "pie",
     "image": "/images/plemon.JPG",
     "_id": "3244" 
   },
   {
-    "title": "lemon",
-    "price": 14.99,
-    "category": "Cake",
-    "image": "/images/clemon.JPG",
-    "_id": "1254" 
-  },
-  {
-    "title": "pumpkin",
-    "price": 9.99,
-    "category": "pie",
-    "image": "/images/ppumkin.jpg",
-    "_id": "3432" 
-  },
-  {
-    "title": "apple",
-    "price": 44.99,
-    "category": "pie",
-    "image": "/images/papple.JPG",
-    "_id": "7394" 
-  },
-  {
-    "title": "mix Berry",
+    "title": "Mix Berry",
     "price": 34.99,
     "category": "pie",
     "image": "/images/pmixberry.WEBP",
     "_id": "6745" 
   },
   {
-    "title": "chocolate",
+    "title": "Lemon",
+    "price": 14.99,
+    "category": "Cake",
+    "image": "/images/clemon.JPG",
+    "_id": "1254" 
+  },
+  {
+    "title": "Pumpkin",
+    "price": 9.99,
+    "category": "pie",
+    "image": "/images/ppumkin.jpg",
+    "_id": "3432" 
+  },
+  {
+    "title": "Apple",
+    "price": 44.99,
+    "category": "pie",
+    "image": "/images/papple.JPG",
+    "_id": "7394" 
+  },
+  {
+    "title": "Chocolate",
     "price": 39.99,
     "category": "Cake",
     "image": "/images/cchocolate.WEBP",
     "_id": "5674" 
   },
   {
-    "title": "vanilla",
+    "title": "Vanilla",
     "price": 29.99,
     "category": "Cake",
     "image": "/images/cvanilla.JPG",
@@ -65,7 +65,7 @@ const mockCategories = ["Cake", "Pie", "Cookies"]
 function Catologe(){
   return(
     <div className="catologe page">
-      <h1>Check out these sweats</h1>
+      <h1>Sweets for your Sweet Tooth</h1>
 
       <div className="filters">
       {mockCategories.map( cat => <button className='btn btn-sm btn-outline-success'>{cat}</button>)}

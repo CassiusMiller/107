@@ -1,8 +1,15 @@
+import { useContext } from "react";
 import "./Navbar.css"
 
 import { Link } from "react-router-dom";
+import DataContext from "../state/dataContext";
+import Cart from "../pages/Cart";
 
 function Navbar() {
+  
+  const user = useContext(DataContext).user;
+  const cart = useContext(DataContext).cart;
+
   return(
     <div className="navbar">
       <span className="title">Sweat Spot</span>
@@ -20,8 +27,15 @@ function Navbar() {
           <Link to="/admin">Admin</Link>
         </li>
         <li className="cart-container" >
-          <i class="fa-solid fa-cart-shopping"></i>
-          <Link to="/cart">Cart</Link>
+          
+          <Link to="/cart" className="btn btn-outline-dark">
+            {cart.length}
+            <i className="fa-solid fa-cart-shopping"></i>
+            Cart
+          </Link>
+          <button className="btn btn-outline-dark">
+            {user.name}
+          </button>
         </li>
       </ul>
     </div>
