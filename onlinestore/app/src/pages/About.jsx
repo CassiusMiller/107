@@ -12,7 +12,7 @@ function About(){
   return (
     <div className="about page">
 
-      <img className="me" src="/Me.heic" alt="about me"></img>
+      <img className="me" src="/me.png" alt="about me"></img>
 
       <h2>Cassius Miller</h2>
       { isVisible ? <h5>cassius.miller@sdgku.edu</h5> : <label className="d-block">Click to see email</label> }

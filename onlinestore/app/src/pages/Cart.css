@@ -19,3 +19,8 @@
 .cart .prod-in-cart .frac1{
   flex: 1;
 }
+.cart .empty-alert
+{
+  padding-top: 3rem; text-align: center;
+  color:  #900404;
+}

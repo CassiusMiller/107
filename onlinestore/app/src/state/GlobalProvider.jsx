@@ -29,8 +29,7 @@ function GlobalPorvider(props) {
       removeProdFromCart: removeProdFromCart,
       clearCart: clearCart,
       }}>
-      cart: cart,
-      user: user,
+        
       {props.children}
     </DataContext.Provider>
   )

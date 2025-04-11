@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Discount.css"
 
 function Discount(){
-
+  const [allCoupons, setAllCoupons] = useState([]);
   const[coupon, setCoupon] = useState({
     code:"",
     discount:""
@@ -12,6 +12,9 @@ function Discount(){
   function save(){
     console.log(coupon);
     
+    let copy = [...allCoupons] ;
+    copy.push (coupon) ; 
+    setAllCoupons ( copy) ;
   }
 
   function handleCoupon() {
@@ -37,10 +40,14 @@ function Discount(){
 
       <div className="form-fied">
         <label className="form-label">Discount</label>
-        <input className="form-control" type="text" onBlur={handleCoupon} name="discount"/>
+        <input className="form-control" type="number" onBlur={handleCoupon} name="discount"/>
       </div>
 
-    <button className="btn btn-sm btn-priamry" onClick={save}>Save</button>
+    <button className="btn btn-outline-success" onClick={save}>Save</button>
+
+    <ul>
+      {allCoupons.map ( cp => <li>{cp.code} - {cp.discount}%</li>)}
+    </ul>
 
     </div>
   )

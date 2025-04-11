@@ -1,10 +1,7 @@
 import "./ProductAdmin.css"
+import { useState } from "react"
 
 function ProductAdmin(){
-  function save(){
-
-  }
-
 
   return(
     <div className="padmin">
@@ -17,12 +14,12 @@ function ProductAdmin(){
 
       <div className="form-fied">
         <label className="form-label">Price</label>
-        <input className="form-control" type="text" />
+        <input className="form-control" type="text"/>
       </div>
 
       <div className="form-fied">
         <label className="form-label">Image</label>
-        <input className="form-control" type="text" />
+        <input className="form-control" type="text"/>
       </div>
 
       <div className="form-fied">
@@ -30,7 +27,7 @@ function ProductAdmin(){
         <input className="form-control" type="text" />
       </div>
 
-    <button className="btn btn-sm btn-priamry" onClick={save}>Save</button>
+    <button onClick={save} className="btn btn-outline-success" >Save</button>
 
     </div>
   )

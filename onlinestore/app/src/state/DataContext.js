@@ -1,7 +1,7 @@
 import { createContext } from "react";
 
 const DataContext = createContext({
-  cart: [],
+  cart:[],
   user: {},
 
   addProdToCart: () => {},

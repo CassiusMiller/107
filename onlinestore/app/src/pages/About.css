@@ -9,8 +9,9 @@
 }
 
 .about .me{
+  margin-top: 4%;
   height: 250px;
-  border-radius: 40%;
+  border-radius: 50%;
   margin-bottom: 12px;
 }
 

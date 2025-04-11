@@ -10,6 +10,16 @@ function Navbar() {
   const user = useContext(DataContext).user;
   const cart = useContext(DataContext).cart;
 
+  function getNumOfProds () {
+
+      let sum = 0;
+      for (let i=0; i<cart. length; i++) {
+        const prod = cart [i];
+        sum += prod.quantity;
+      }
+      return sum;
+  }
+
   return(
     <div className="navbar">
       <span className="title">Sweat Spot</span>
@@ -29,7 +39,7 @@ function Navbar() {
         <li className="cart-container" >
           
           <Link to="/cart" className="btn btn-outline-dark">
-            {cart.length}
+            {getNumOfProds()}
             <i className="fa-solid fa-cart-shopping"></i>
             Cart
           </Link>

@@ -6,6 +6,7 @@ import About from './pages/About';
 import Admin from './pages/Admin';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
+import ThankYou from './pages/Thankyou';
 
 //load bootstrap and icons
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -14,6 +15,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import GlobalPorvider from './state/GlobalProvider';
+
 
 
 
@@ -34,6 +36,7 @@ function App() {
           <Route path='/about' element={<About/>}/>
           <Route path='/admin' element={<Admin/>}/>
           <Route path='/cart' element={<Cart/>}/>
+          <Route path='/thankyou' element={<ThankYou/>}/>
         </Routes>
 
         <Footer/>

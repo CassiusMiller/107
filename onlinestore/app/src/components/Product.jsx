@@ -19,6 +19,7 @@ function Product(props){
   }
 
   function handleQuantity(qty){
+    console.log("Quanity changed", qty)
     setQuantity(qty);
   }
 
@@ -42,7 +43,7 @@ function Product(props){
       <div className="controls">
         <QuantityPicker onChange={handleQuantity} />
         
-        <button className="btn btn-outline-primary" onClick={add}>
+        <button className="btn btn-outline-success" onClick={add}>
           <i className="fa-solid fa-cart-plus"></i>
           Add
         </button>
