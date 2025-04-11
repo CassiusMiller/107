@@ -63,6 +63,23 @@ const mockData = [
 const mockCategories = ["Cake", "Pie", "Cookies"]
 
 function Catologe(){
+  
+  const [allProducts, setAllProducts] = useState([]);
+
+  async function loadProducts () {
+    const data = await DataService.getProducts ();
+    setAllProducts (data) ;
+  }
+  
+  async function loadCategories () {
+    let cats = await DataService.getCategories ();
+    setCategories (cats);
+  }
+
+  useEffect (function(){
+    loadProducts;
+  }, []);
+
   return(
     <div className="catologe page">
       <h1>Sweets for your Sweet Tooth</h1>
